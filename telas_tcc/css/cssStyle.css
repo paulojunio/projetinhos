@@ -1,6 +1,6 @@
 #pontosDeControles{
 
-	margin-top: 30px;
+	margin-top: 3%;
 	background-color: #f1f1f1;
 	
 }
@@ -41,15 +41,57 @@
 	color: #999999;
 }
 
-#controleTamanho {
+/*#controleTamanho {
 	width: 80%;
-	background-color: red;
 	margin: 0 auto;
 	padding-bottom: 20px;
 }
 #nav_bar{
-	width: 90%;
-	margin: 0 auto;
 
-	
+	margin: 0 auto;
+	background-color: #00CED1;
+	padding: 5px;
+	color: #f1f1f1;
+}
+
+.navbar a {
+
+	font-size: 15px;
+	color: #f1f1f1 !important;
+
+}
+.navbar-brand{
+
+	color: #f1f1f1 !important;
+
+}*/
+
+#tituloSite h1{
+	text-align: center;
+	color: #00CED1;
+	font-size: 34px;
+}
+.nav_bar {
+	width: 100%;
+	padding: 5px;
+	font-size: 24px;
+	background-color: #00CED1;
+}
+
+#nameSite{
+	margin-left: 10px;
+}
+#botoesControle{
+	position: absolute;
+    top: 8px;
+    right: 16px;
+	font-size: 24px;
+	margin-right: 60px;
+}
+
+#botoesControle2{
+	position: absolute;
+    top: 8px;
+    right: 16px;
+	font-size: 24px;
 }

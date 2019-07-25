@@ -10,118 +10,124 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
-	<div class="container" id="controleTamanho">
-		<nav class="navbar navbar-deafault navbar-fixed-top" id="nav_bar">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#minhaNavbar">
-						<span class="icon-bar" id="barra1"></span>
-						<span class="icon-bar" id="barra2"></span>
-						<span class="icon-bar" id="barra3"></span> 
-					</button>
-					<a class="navbar-brand" href="#">Bem vindo, Paulo Junio</a>
-				</div>
-				<div class="collapse navbar-collapse" id="minhaNavbar">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Perfil</a></li>
-						<li><a href="#">Sair</a></li>
-					</ul>
+	<!--<nav class="navbar navbar-deafault navbar-fixed-top" id="nav_bar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#minhaNavbar">
+					<span class="icon-bar" id="barra1"></span>
+					<span class="icon-bar" id="barra2"></span>
+					<span class="icon-bar" id="barra3"></span> 
+				</button>
+				<a class="navbar-brand" href="#">Bem vindo, Paulo Junio</a>
+			</div>
+			<div class="collapse navbar-collapse" id="minhaNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Perfil</a></li>
+					<li><a href="#">Sair</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>!-->
+	<div class="nav_bar">
+		<a href="#" id="nameSite">Bem vindo, Paulo Junio</a>
+		<a href="#" id="botoesControle">Perfil</a>
+		<a href="#" id='botoesControle2'>Sair</a>
+	</div>
+	<div id='tituloSite'>
+		<h1>Sistema de Gestão de TCCs</h1>
+	</div>
+	<div class="container" id="pontosDeControles">
+		<ul class="nav nav-tabs">
+			<li><a data-toggle="tab" href="#pontoDeControle1">PT - 1</a></li>
+			<li><a data-toggle="tab" href="#pontoDeControle2">PT - 2</a></li>
+			<li><a data-toggle="tab" href="#pontoDeControle3">PT - 3</a></li>
+			<li><a data-toggle="tab" href="#pontoDeControle4">PT - 4</a></li>
+		</ul>
+
+
+		<div class="tab-content">
+			<div id="pontoDeControle1" class="tab-pane fade table-responsive">
+				<h1>
+					Ponto de Controle - 1
+				</h1>
+
+				<h2>
+					Objetivos
+				</h2>		
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales convallis class augue orci ante vel, tristique dictumst suspendisse congue cras phasellus pharetra, ultrices viverra curae velit ipsum potenti erat. Ullamcorper pretium fusce tincidunt gravida lacinia nulla etiam, fames ad leo fringilla mollis convallis, aliquet lorem pulvinar ex volutpat senectus. Faucibus cursus consequat lorem turpis quisque integer a, cras et mus tellus consectetur ornare purus primis, risus habitant suscipit penatibus malesuada sed. Suspendisse nam condimentum nascetur cursus dolor mi penatibus laoreet pretium, hendrerit tincidunt iaculis phasellus dui tempor viverra himenaeos, semper venenatis sapien ullamcorper senectus sagittis purus dignissim. Donec ut non nostra nulla neque mollis gravida tortor, consectetur penatibus fringilla amet risus consequat inceptos.</p>		
+				
+				<h2>
+					Entregas
+				</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales</p>
+				<div id='enviarPontos'>	
+					<p>| Valor da entrega: 25 pontos | Data da entrega: 18/03/2020 |</p>
+					<button type="button" class="btn" >Escolher Arquivo</button>
+					<button type="button" class="btn">Enviar Arquivo</button>
 				</div>
 			</div>
-		</nav>
+			<div id="pontoDeControle2" class="tab-pane fade table-responsive">
+				<h1>
+					Ponto de Controle - 2
+				</h1>
 
-		<div class="container" id="pontosDeControles">
-			<ul class="nav nav-tabs">
-				<li><a data-toggle="tab" href="#pontoDeControle1">PT - 1</a></li>
-				<li><a data-toggle="tab" href="#pontoDeControle2">PT - 2</a></li>
-				<li><a data-toggle="tab" href="#pontoDeControle3">PT - 3</a></li>
-				<li><a data-toggle="tab" href="#pontoDeControle4">PT - 4</a></li>
-			</ul>
-	
-
-			<div class="tab-content">
-				<div id="pontoDeControle1" class="tab-pane fade table-responsive">
-					<h1>
-						Ponto de Controle - 1
-					</h1>
-
-					<h2>
-						Objetivos
-					</h2>		
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales convallis class augue orci ante vel, tristique dictumst suspendisse congue cras phasellus pharetra, ultrices viverra curae velit ipsum potenti erat. Ullamcorper pretium fusce tincidunt gravida lacinia nulla etiam, fames ad leo fringilla mollis convallis, aliquet lorem pulvinar ex volutpat senectus. Faucibus cursus consequat lorem turpis quisque integer a, cras et mus tellus consectetur ornare purus primis, risus habitant suscipit penatibus malesuada sed. Suspendisse nam condimentum nascetur cursus dolor mi penatibus laoreet pretium, hendrerit tincidunt iaculis phasellus dui tempor viverra himenaeos, semper venenatis sapien ullamcorper senectus sagittis purus dignissim. Donec ut non nostra nulla neque mollis gravida tortor, consectetur penatibus fringilla amet risus consequat inceptos.</p>		
-					
-					<h2>
-						Entregas
-					</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales</p>
-					<div id='enviarPontos'>	
-						<p>| Valor da entrega: 25 pontos | Data da entrega: 18/03/2020 |</p>
-						<button type="button" class="btn" >Escolher Arquivo</button>
-						<button type="button" class="btn">Enviar Arquivo</button>
-					</div>
+				<h2>
+					Objetivos
+				</h2>		
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales convallis class augue orci ante vel, tristique dictumst suspendisse congue cras phasellus pharetra, ultrices viverra curae velit ipsum potenti erat. Ullamcorper pretium fusce tincidunt gravida lacinia nulla etiam, fames ad leo fringilla mollis convallis, aliquet lorem pulvinar ex volutpat senectus. Faucibus cursus consequat lorem turpis quisque integer a, cras et mus tellus consectetur ornare purus primis, risus habitant suscipit penatibus malesuada sed. Suspendisse nam condimentum nascetur cursus dolor mi penatibus laoreet pretium, hendrerit tincidunt iaculis phasellus dui tempor viverra himenaeos, semper venenatis sapien ullamcorper senectus sagittis purus dignissim. Donec ut non nostra nulla neque mollis gravida tortor, consectetur penatibus fringilla amet risus consequat inceptos.</p>		
+				
+				<h2>
+					Entregas
+				</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales</p>
+				<div id='enviarPontos'>	
+					<p>| Valor da entrega: 25 pontos | Data da entrega: 18/03/2020 |</p>
+					<button type="button" class="btn" >Escolher Arquivo</button>
+					<button type="button" class="btn">Enviar Arquivo</button>
 				</div>
-				<div id="pontoDeControle2" class="tab-pane fade table-responsive">
-					<h1>
-						Ponto de Controle - 2
-					</h1>
+			</div>
+			<div id="pontoDeControle3" class="tab-pane fade table-responsive">
+				<h1>
+					Ponto de Controle - 3
+				</h1>
 
-					<h2>
-						Objetivos
-					</h2>		
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales convallis class augue orci ante vel, tristique dictumst suspendisse congue cras phasellus pharetra, ultrices viverra curae velit ipsum potenti erat. Ullamcorper pretium fusce tincidunt gravida lacinia nulla etiam, fames ad leo fringilla mollis convallis, aliquet lorem pulvinar ex volutpat senectus. Faucibus cursus consequat lorem turpis quisque integer a, cras et mus tellus consectetur ornare purus primis, risus habitant suscipit penatibus malesuada sed. Suspendisse nam condimentum nascetur cursus dolor mi penatibus laoreet pretium, hendrerit tincidunt iaculis phasellus dui tempor viverra himenaeos, semper venenatis sapien ullamcorper senectus sagittis purus dignissim. Donec ut non nostra nulla neque mollis gravida tortor, consectetur penatibus fringilla amet risus consequat inceptos.</p>		
-					
-					<h2>
-						Entregas
-					</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales</p>
-					<div id='enviarPontos'>	
-						<p>| Valor da entrega: 25 pontos | Data da entrega: 18/03/2020 |</p>
-						<button type="button" class="btn" >Escolher Arquivo</button>
-						<button type="button" class="btn">Enviar Arquivo</button>
-					</div>
+				<h2>
+					Objetivos
+				</h2>		
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales convallis class augue orci ante vel, tristique dictumst suspendisse congue cras phasellus pharetra, ultrices viverra curae velit ipsum potenti erat. Ullamcorper pretium fusce tincidunt gravida lacinia nulla etiam, fames ad leo fringilla mollis convallis, aliquet lorem pulvinar ex volutpat senectus. Faucibus cursus consequat lorem turpis quisque integer a, cras et mus tellus consectetur ornare purus primis, risus habitant suscipit penatibus malesuada sed. Suspendisse nam condimentum nascetur cursus dolor mi penatibus laoreet pretium, hendrerit tincidunt iaculis phasellus dui tempor viverra himenaeos, semper venenatis sapien ullamcorper senectus sagittis purus dignissim. Donec ut non nostra nulla neque mollis gravida tortor, consectetur penatibus fringilla amet risus consequat inceptos.</p>		
+				
+				<h2>
+					Entregas
+				</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales</p>
+				<div id='enviarPontos'>	
+					<p>| Valor da entrega: 25 pontos | Data da entrega: 18/03/2020 |</p>
+					<button type="button" class="btn" >Escolher Arquivo</button>
+					<button type="button" class="btn">Enviar Arquivo</button>
 				</div>
-				<div id="pontoDeControle3" class="tab-pane fade table-responsive">
-					<h1>
-						Ponto de Controle - 3
-					</h1>
+			</div>
+			<div id="pontoDeControle4" class="tab-pane fade table-responsive">
+				<h1>
+					Ponto de Controle - 4
+				</h1>
 
-					<h2>
-						Objetivos
-					</h2>		
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales convallis class augue orci ante vel, tristique dictumst suspendisse congue cras phasellus pharetra, ultrices viverra curae velit ipsum potenti erat. Ullamcorper pretium fusce tincidunt gravida lacinia nulla etiam, fames ad leo fringilla mollis convallis, aliquet lorem pulvinar ex volutpat senectus. Faucibus cursus consequat lorem turpis quisque integer a, cras et mus tellus consectetur ornare purus primis, risus habitant suscipit penatibus malesuada sed. Suspendisse nam condimentum nascetur cursus dolor mi penatibus laoreet pretium, hendrerit tincidunt iaculis phasellus dui tempor viverra himenaeos, semper venenatis sapien ullamcorper senectus sagittis purus dignissim. Donec ut non nostra nulla neque mollis gravida tortor, consectetur penatibus fringilla amet risus consequat inceptos.</p>		
-					
-					<h2>
-						Entregas
-					</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales</p>
-					<div id='enviarPontos'>	
-						<p>| Valor da entrega: 25 pontos | Data da entrega: 18/03/2020 |</p>
-						<button type="button" class="btn" >Escolher Arquivo</button>
-						<button type="button" class="btn">Enviar Arquivo</button>
-					</div>
-				</div>
-				<div id="pontoDeControle4" class="tab-pane fade table-responsive">
-					<h1>
-						Ponto de Controle - 4
-					</h1>
-
-					<h2>
-						Objetivos
-					</h2>		
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales convallis class augue orci ante vel, tristique dictumst suspendisse congue cras phasellus pharetra, ultrices viverra curae velit ipsum potenti erat. Ullamcorper pretium fusce tincidunt gravida lacinia nulla etiam, fames ad leo fringilla mollis convallis, aliquet lorem pulvinar ex volutpat senectus. Faucibus cursus consequat lorem turpis quisque integer a, cras et mus tellus consectetur ornare purus primis, risus habitant suscipit penatibus malesuada sed. Suspendisse nam condimentum nascetur cursus dolor mi penatibus laoreet pretium, hendrerit tincidunt iaculis phasellus dui tempor viverra himenaeos, semper venenatis sapien ullamcorper senectus sagittis purus dignissim. Donec ut non nostra nulla neque mollis gravida tortor, consectetur penatibus fringilla amet risus consequat inceptos.</p>		
-					
-					<h2>
-						Entregas
-					</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales</p>
-					<div id='enviarPontos'>	
-						<p>| Valor da entrega: 25 pontos | Data da entrega: 18/03/2020 |</p>
-						<button type="button" class="btn" >Escolher Arquivo</button>
-						<button type="button" class="btn">Enviar Arquivo</button>
-					</div>
+				<h2>
+					Objetivos
+				</h2>		
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales convallis class augue orci ante vel, tristique dictumst suspendisse congue cras phasellus pharetra, ultrices viverra curae velit ipsum potenti erat. Ullamcorper pretium fusce tincidunt gravida lacinia nulla etiam, fames ad leo fringilla mollis convallis, aliquet lorem pulvinar ex volutpat senectus. Faucibus cursus consequat lorem turpis quisque integer a, cras et mus tellus consectetur ornare purus primis, risus habitant suscipit penatibus malesuada sed. Suspendisse nam condimentum nascetur cursus dolor mi penatibus laoreet pretium, hendrerit tincidunt iaculis phasellus dui tempor viverra himenaeos, semper venenatis sapien ullamcorper senectus sagittis purus dignissim. Donec ut non nostra nulla neque mollis gravida tortor, consectetur penatibus fringilla amet risus consequat inceptos.</p>		
+				
+				<h2>
+					Entregas
+				</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit platea himenaeos turpis pulvinar ridiculus nostra, penatibus nunc nulla ligula tempus. Interdum et sodales</p>
+				<div id='enviarPontos'>	
+					<p>| Valor da entrega: 25 pontos | Data da entrega: 18/03/2020 |</p>
+					<button type="button" class="btn" >Escolher Arquivo</button>
+					<button type="button" class="btn">Enviar Arquivo</button>
 				</div>
 			</div>
 		</div>
 	</div>
+	
 </body>
 </html>
