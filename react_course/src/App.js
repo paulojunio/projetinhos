@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import './App.css';
+import Radium, { StyleRoot } from 'radium';
 import Person from './Person/Person';
 
 const App = props => {
   const style = {
-    backgroundColor: 'white',
+    backgroundColor: 'green',
+    color: 'white',
     font: 'inherit',
     border: '1px solid blue',
     padding: '8px',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    ':hover': {
+      backgroundColor: 'lightgreen',
+      color: 'black'
+    }
   };
 
   const [showPersonsState, setShowPersons] = useState(false);
@@ -59,6 +65,10 @@ const App = props => {
   let persons = null;
 
   if(showPersonsState) {
+    style.backgroundColor = 'red';
+    style[':hover'] = {
+      backgroundColor: 'salmon'
+    }
     persons = ( <div>
         {personsState.persons.map( (person, index) => {
           return (
@@ -69,20 +79,29 @@ const App = props => {
     );
   }
 
+  // let classes = ['red', 'bold'].join(' ');
+  let classes = [];
+  if(personsState.persons.length <= 2)
+    classes.push('red');
+  if(personsState.persons.length <= 1)
+    classes.push('bold');
+  
   return (
-    <div className="App">
-      <h1>Hello World???</h1>
-      <p>{otherState}</p>
-      <button style={style} onClick={togglePersonsHandler}>Click here!!</button>
-      {persons}
-      {/* <Person name={personsState.persons[0].name} age={personsState.persons[0].age} click={switchNameHandle.bind(this, "Paulao")} change={nameChangeHandle}>A fita ta facil</Person>
-      <Person name={personsState.persons[1].name} age={personsState.persons[1].age} click={switchNameHandle}>A fita é complicada</Person>
-      <Person name={personsState.persons[2].name} age={personsState.persons[2].age} click={switchNameHandle}>A fita é a fita</Person> */}
-    </div>
+    <StyleRoot>
+      <div className="App">
+        <h1>Hello World???</h1>
+        <p className={classes.join(' ')}>{otherState}</p>
+        <button style={style} onClick={togglePersonsHandler}>Click here!!</button>
+        {persons}
+        {/* <Person name={personsState.persons[0].name} age={personsState.persons[0].age} click={switchNameHandle.bind(this, "Paulao")} change={nameChangeHandle}>A fita ta facil</Person>
+        <Person name={personsState.persons[1].name} age={personsState.persons[1].age} click={switchNameHandle}>A fita é complicada</Person>
+        <Person name={personsState.persons[2].name} age={personsState.persons[2].age} click={switchNameHandle}>A fita é a fita</Person> */}
+      </div>
+    </StyleRoot>
   );
 }
 
-export default App;
+export default Radium(App);
 
 
 
