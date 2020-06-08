@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import styled from "styled-components";
 import Person from './Person/Person';
 
 const App = props => {
-  // const style = {
-    
-  // };
 
   const [showPersonsState, setShowPersons] = useState(false);
 
@@ -18,18 +14,6 @@ const App = props => {
     ]
   });
 
-  const StyleButton = styled.button`
-    background-color: ${props => props.alt ? 'red' : 'green'};
-    color: white;
-    font: inherit;
-    border: 1px solid blue;
-    padding: 8px;
-    cursor: pointer;
-    &:hover {
-      background-color: ${props => props.alt ? 'salmon' : 'lightgreen'};
-      color: black;
-    }
-  `;
   const [otherState] = useState("So uma palavrinhas");
 
   // const switchNameHandle = (newName) => {
@@ -68,10 +52,6 @@ const App = props => {
   let persons = null;
 
   if(showPersonsState) {
-    // style.backgroundColor = 'red';
-    // style[':hover'] = {
-    //   backgroundColor: 'salmon'
-    // }
     persons = ( <div>
         {personsState.persons.map( (person, index) => {
           return (
@@ -82,7 +62,6 @@ const App = props => {
     );
   }
 
-  // let classes = ['red', 'bold'].join(' ');
   let classes = [];
   if(personsState.persons.length <= 2)
     classes.push('red');
@@ -93,7 +72,7 @@ const App = props => {
       <div className="App">
         <h1>Hello World???</h1>
         <p className={classes.join(' ')}>{otherState}</p>
-        <StyleButton alt={showPersonsState} onClick={togglePersonsHandler}>Click here!!</StyleButton>
+        <button className="button" onClick={togglePersonsHandler}>Click here!!</button>
         {persons}
         {/* <Person name={personsState.persons[0].name} age={personsState.persons[0].age} click={switchNameHandle.bind(this, "Paulao")} change={nameChangeHandle}>A fita ta facil</Person>
         <Person name={personsState.persons[1].name} age={personsState.persons[1].age} click={switchNameHandle}>A fita é complicada</Person>
